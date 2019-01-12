@@ -37,7 +37,7 @@
         </plugins>
     </build>
     <scm>
-        <developerConnection>scm:git:https://github.com/bansalhimanshu0296/himanshu-pet-clinic-project.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:bansalhimanshu0296/himanshu-pet-clinic-project.git</developerConnection>
       <tag>himanshu-pet-clinic-0.0.1</tag>
   </scm>
 </project>
