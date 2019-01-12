@@ -14,7 +14,7 @@
     </parent>
     <groupId>himanshu.springframework</groupId>
     <artifactId>himanshu-pet-clinic</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>himanshu-pet-clinic-project</name>
     <description>Himanshu Pet Clinic Project</description>
 
@@ -39,6 +39,6 @@
     </build>
     <scm>
         <developerConnection>scm:git:git@github.com:bansalhimanshu0296/himanshu-pet-clinic-project.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>himanshu-pet-clinic-0.0.2</tag>
   </scm>
 </project>
