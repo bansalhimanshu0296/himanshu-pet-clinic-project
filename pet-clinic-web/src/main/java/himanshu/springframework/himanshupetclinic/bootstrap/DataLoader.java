@@ -4,8 +4,7 @@ import himanshu.springframework.himanshupetclinic.model.Owner;
 import himanshu.springframework.himanshupetclinic.model.Vet;
 import himanshu.springframework.himanshupetclinic.services.OwnerService;
 import himanshu.springframework.himanshupetclinic.services.VetService;
-import himanshu.springframework.himanshupetclinic.services.map.OwnerServiceMapImpl;
-import himanshu.springframework.himanshupetclinic.services.map.VetServiceMapImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,9 +14,10 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMapImpl();
-        vetService = new VetServiceMapImpl();
+    @Autowired
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
