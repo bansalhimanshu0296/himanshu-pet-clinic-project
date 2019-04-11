@@ -1,11 +1,11 @@
 package himanshu.springframework.himanshupetclinic.services.map;
 
 import himanshu.springframework.himanshupetclinic.model.Pet;
-import himanshu.springframework.himanshupetclinic.services.CrudService;
+import himanshu.springframework.himanshupetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMapImpl extends AbstractMapService<Pet,Long> implements CrudService<Pet,Long> {
+public class PetServiceMapImpl extends AbstractMapService<Pet,Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
